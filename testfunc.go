@@ -38,4 +38,6 @@ type Data struct {
 	Time    time.Time
 	NilMe   *string
 	ZeroMe  string
+	ReMap   int `fcf:"other"`
+	Dynamic interface{}
 }
