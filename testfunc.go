@@ -59,5 +59,9 @@ type Data struct {
 		Lat  float32 `fcf:"latitude"`
 		Long float32 `fcf:"longitude"`
 	}
-	Loc2 fcf.GeoPoint `fcf:"Location"`
+	TypedArray     []string
+	DynamicArray   []interface{}
+	ArrayInterface interface{}  `fcf:"DynamicArray"`
+	Loc2           fcf.GeoPoint `fcf:"Location"`
+	Bytes          []byte
 }
