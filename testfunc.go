@@ -64,4 +64,10 @@ type Data struct {
 	ArrayInterface interface{}  `fcf:"DynamicArray"`
 	Loc2           fcf.GeoPoint `fcf:"Location"`
 	Bytes          []byte
+	RMap           rMap
+}
+
+type rMap struct {
+	Name string
+	Arr  []rMap
 }
